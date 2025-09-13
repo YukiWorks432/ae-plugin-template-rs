@@ -1,5 +1,7 @@
 [template]
+exclude = [".gitignore", "target", "AdobePlugin.just"]
 
+[placeholders]
 project-name = { type = "string", prompt = "Project name?", default = "my-ae-plugin" }
 display-name = { type = "string", prompt = "Display name?", default = "My AE Plugin" }
 category = { type = "string", prompt = "Category?", default = "Effect" }
@@ -8,4 +10,3 @@ bundle-identifier = { type = "string", prompt = "Bundle identifier?", default = 
 author = { type = "string", prompt = "Author?", default = "Your Name" }
 copyright = { type = "string", prompt = "Copyright?", default = "2025 Your Name" }
 description = { type = "string", prompt = "Description?", default = "An Adobe After Effects plugin made with Rust." }
-exclude = [".gitignore", "target", "AdobePlugin.just"]
