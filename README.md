@@ -1,19 +1,19 @@
-# RGBA Contrast
-After Effects / Premiere Pro用プラグイン。
+# ae-plugin-template-rs
 
-RGBAごとにコントラストを調節できます。
+After Effects / Premiere Pro 用プラグインの Rust テンプレート
+
+## How to Use
+
+1. [cargo-generate](https://github.com/cargo-generate/cargo-generate) をインストールします。
+
+2. [cargo-generate](https://github.com/cargo-generate/cargo-generate) を用いて以下のコマンドを実行します。
+
+```
+cargo generate --git https://github.com/YukiWorks432/ae-plugin-template-rs
+```
+
+3. いくつかの質問に答えればテンプレートを用いたリポジトリが完成します。
+
 ## License
+
 MIT License Copyright 2025 花雪(X: @Yuk1_Works)
-## パラメーター
-**Red / Green / Blue / Alpha**
-
-それぞれのコントラストを調整できます。
-
-**R/G/B/A/Pivot**
-
-コントラストを調整する原点を変更できます。
-
-**Mode**
-
-- Modern: より滑らかでモダンなコントラスト調整を行います。
-- Legacy: 直線的でレガシーなコントラスト調整を行います。
