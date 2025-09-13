@@ -144,8 +144,10 @@ impl AdobePluginGlobal for Plugin {
     };
     match cmd {
       ae::Command::About => {
-        out_data
-          .set_return_msg("{{display-name}}\r{{copyright}}\r{{description}}");
+        let year = env!("BUILD_YEAR");
+        out_data.set_return_msg(&format!(
+          "{{display-name}}\rCopyright {year} {{Author}}\r{{description}}"
+        ));
       }
       ae::Command::GlobalSetup => {
         // For Premiere - declare supported pixel formats
