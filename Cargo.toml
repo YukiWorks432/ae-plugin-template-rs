@@ -1,0 +1,21 @@
+[package]
+name = "{{project-name}}"
+version = "0.0.1"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+after-effects = "0.2.1"
+
+[build-dependencies]
+pipl = "0.1.1"
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = [
+    'cfg(does_dialog)',
+    'cfg(threaded_rendering)',
+    'cfg(smart_render)',
+    'cfg(feature, values("catch-panics"))',
+] }
