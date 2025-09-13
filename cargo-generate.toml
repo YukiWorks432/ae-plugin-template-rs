@@ -7,5 +7,5 @@ match-name = { type = "string", prompt = "Match name?", default = "MY_AE_PLUGIN"
 bundle-identifier = { type = "string", prompt = "Bundle identifier?", default = "com.example.my_ae_plugin" }
 author = { type = "string", prompt = "Author?", default = "Your Name" }
 copyright = { type = "string", prompt = "Copyright?", default = "2025 Your Name" }
-discription = { type = "string", prompt = "Description?", default = "An Adobe After Effects plugin made with Rust." }
+description = { type = "string", prompt = "Description?", default = "An Adobe After Effects plugin made with Rust." }
 exclude = [".gitignore", "target", "AdobePlugin.just"]
