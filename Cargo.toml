@@ -10,6 +10,7 @@ crate-type = ["cdylib"]
 after-effects = "0.2.1"
 
 [build-dependencies]
+chrono = "0.4.42"
 pipl = "0.1.1"
 
 [lints.rust]
