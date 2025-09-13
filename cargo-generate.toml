@@ -3,9 +3,8 @@ exclude = [".gitignore", "target", "AdobePlugin.just"]
 
 [placeholders]
 display-name = { type = "string", prompt = "Display name?", default = "My AE Plugin" }
+author = { type = "string", prompt = "Author?", default = "Your Name" }
 category = { type = "string", prompt = "Category?", default = "Effect" }
 match-name = { type = "string", prompt = "Match name?", default = "MY_AE_PLUGIN" }
-bundle-identifier = { type = "string", prompt = "Bundle identifier?", default = "com.example.my_ae_plugin" }
-author = { type = "string", prompt = "Author?", default = "Your Name" }
-copyright = { type = "string", prompt = "Copyright?", default = "2025 Your Name" }
+bundle-identifier = { type = "string", prompt = "Bundle identifier?", default = "com.example.my-ae-plugin" }
 description = { type = "string", prompt = "Description?", default = "An Adobe After Effects plugin made with Rust." }
